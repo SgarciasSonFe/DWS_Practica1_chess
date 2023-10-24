@@ -9,7 +9,7 @@ namespace ChessAPI
         public Board()
         {
             board = new Piece[8, 8];
-            // TOnotDO Practica 02_7
+            // notTODO Practica 02_7
             // Este constructor colocará las piezas en el tablero  
             board[0,0] = new Rook(Piece.ColorEnum.BLACK);
             board[0,1] = new Knight(Piece.ColorEnum.BLACK);
@@ -60,7 +60,7 @@ namespace ChessAPI
 
         }
 
-        // TOnotDO Practica 02_4 v
+        // notTODO Practica 02_4 v
         //Este método escribira por consola el tablero,
         //haciendo un salto de línea después de cada fila.
         //Para ver el formato del pintado, leer enunciado de la práctica
