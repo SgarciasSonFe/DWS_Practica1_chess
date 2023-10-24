@@ -10,7 +10,7 @@ namespace ChessAPI
         {
             board = new Piece[8, 8];
             // TOnotDO Practica 02_7
-            // Este constructor colocará las piezas en el tablero 
+            // Este constructor colocará las piezas en el tablero  
             board[0,0] = new Rook(Piece.ColorEnum.BLACK);
             board[0,1] = new Knight(Piece.ColorEnum.BLACK);
             board[0,2] = new Bishop(Piece.ColorEnum.BLACK);
