@@ -57,7 +57,7 @@ namespace ChessAPI
         //en otras clases si lo consideras necesario... 
         private void _Move(Movement movement)
         {
-
+            
         }
 
         // notTODO Practica 02_4 
