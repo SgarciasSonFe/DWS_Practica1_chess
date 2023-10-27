@@ -17,7 +17,7 @@ namespace ChessAPI
         /// en esta clase.
         public bool IsValid()
         {
-            if((_fromBoardPosition.Column >= 0 && _fromBoardPosition.Column <= 7) && (_fromBoardPosition.Row >= 0 && _fromBoardPosition.Row <= 7))
+            if(BoardPosition.ValidateBoardPosition(_fromBoardPosition) && BoardPosition.ValidateBoardPosition(_toBoardPosition))
             {
                 return true;
             } else {

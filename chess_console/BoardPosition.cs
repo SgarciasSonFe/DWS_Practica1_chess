@@ -9,9 +9,9 @@ namespace ChessAPI
         private int _column;
 
         // Método añadido por la Practica 02_2
-        public bool ValidateBoardPosition()
+        public static bool ValidateBoardPosition(BoardPosition boardPosition)
         {
-            if(ValidateRangeNumber(_row) && ValidateRangeNumber(_column))
+            if((boardPosition._row >= 0 && boardPosition._row <= 7) && (boardPosition._column >= 0 && boardPosition._column <= 7))
             {
                 return true;
             } else {
