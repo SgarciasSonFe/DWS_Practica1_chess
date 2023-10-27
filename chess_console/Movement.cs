@@ -12,12 +12,17 @@ namespace ChessAPI
         }
 
 
-        /// TODO Practica 02_1
+        /// notTODO Practica 02_1
         /// Ha de validar el rango de los 2 objetos BoardPosition encapsulados
         /// en esta clase.
         public bool IsValid()
         {
-            return true;
+            if((_fromBoardPosition.Column >= 0 && _fromBoardPosition.Column <= 7) && (_fromBoardPosition.Row >= 0 && _fromBoardPosition.Row <= 7))
+            {
+                return true;
+            } else {
+                return false;
+            }
         }
     }
 }

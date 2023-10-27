@@ -60,7 +60,7 @@ namespace ChessAPI
 
         }
 
-        // notTODO Practica 02_4 v
+        // notTODO Practica 02_4 
         //Este método escribira por consola el tablero,
         //haciendo un salto de línea después de cada fila.
         //Para ver el formato del pintado, leer enunciado de la práctica
