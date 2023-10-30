@@ -7,6 +7,7 @@
             Console.WriteLine("Begin Chess Console Test...");
             ChessGame chess = new ChessGame();
             chess.DrawBoard();
+            Console.WriteLine("------------------------------------------------");
             chess.TryToMove();
             chess.DrawBoard();
             var code = chess.GetBoardAsStringToChessWeb();

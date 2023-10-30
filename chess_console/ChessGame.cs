@@ -1,3 +1,5 @@
+using ChessAPI.Model;
+
 namespace ChessAPI
 {
     internal class ChessGame
@@ -21,8 +23,10 @@ namespace ChessAPI
             //Instancia un movimiento dentro del tablero, desde una posición
             //en la que haya una pieza hasta otro. De momento no se realizan
             //validaciones salvo que sea una posición que esté dentro del tablero.
-            
-            // this.board.Move(movement);
+            BoardPosition fromBoardPosition = new BoardPosition(6,1);
+            BoardPosition toBoardPosition = new BoardPosition(5,1);
+            Movement movement = new Movement(fromBoardPosition,toBoardPosition);
+            this.board.Move(movement);
         }
 
         public string GetBoardAsStringToChessWeb()

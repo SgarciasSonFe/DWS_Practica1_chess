@@ -11,6 +11,15 @@ namespace ChessAPI
             _toBoardPosition = toBoardPosition;
         }
 
+        // Código para la Practica 02_3
+        public BoardPosition GetFromPosition()
+        {
+            return _fromBoardPosition;
+        }
+        public BoardPosition GetToPosition()
+        {
+            return _toBoardPosition;
+        }
 
         /// notTODO Practica 02_1
         /// Ha de validar el rango de los 2 objetos BoardPosition encapsulados

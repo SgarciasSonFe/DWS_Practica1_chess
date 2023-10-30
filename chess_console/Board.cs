@@ -57,7 +57,17 @@ namespace ChessAPI
         //en otras clases si lo consideras necesario... 
         private void _Move(Movement movement)
         {
-            
+            for (int i = 0; i < 8; i++)
+            {
+                for (int j=0; j < 8; j++)
+                {
+                    if(board[i,j].Equals(movement.GetFromPosition()))
+                    {
+                        Console.Write("");
+                    }
+
+                }    
+            }
         }
 
         // notTODO Practica 02_4 
