@@ -8,7 +8,7 @@
 
 </head>
 <body>
-        <?php
+        <?php // Array que define la posición de las piezas en el tablero.
             $board = array(
                 array("RoB","KnB","BiB","QuB","KiB","BiB","KnB","RoB"),
                 array("PaB","PaB","PaB","PaB","PaB","PaB","PaB","PaB"),
@@ -25,7 +25,7 @@
     <?php
         function DrawChessGame($board)
         {
-            echo "<table  class='negro'>";
+            echo "<table>";
             for($i=0;$i<8;$i++)
             {
                 echo "<tr>";
