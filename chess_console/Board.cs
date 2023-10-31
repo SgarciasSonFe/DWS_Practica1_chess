@@ -57,17 +57,15 @@ namespace ChessAPI
         //en otras clases si lo consideras necesario... 
         private void _Move(Movement movement)
         {
-            for (int i = 0; i < 8; i++)
-            {
-                for (int j=0; j < 8; j++)
-                {
-                    if(board[i,j].Equals(movement.GetFromPosition()))
-                    {
-                        Console.Write("");
-                    }
+            
+            BoardPosition pfrom = movement.GetFromPosition();
+            BoardPosition pto = movement.GetToPosition();
 
-                }    
-            }
+            
+            board[pto.Row, pto.Column] = board[pfrom.Row, pfrom.Column];
+            board[pfrom.Row, pfrom.Column] = null;
+            
+                    
         }
 
         // notTODO Practica 02_4 
@@ -80,19 +78,30 @@ namespace ChessAPI
             {
                 for (int j=0; j < 8; j++)
                 {
-                    if((board[i,j] == null) && ((i % 2)==0))
+                    if((i % 2)==0)
                     {
-                        Console.Write("|0000|");
-                        Console.Write("|####|");
-                        j++;
-                    } else if((board[i,j] == null) && ((i % 2)-1==0))
+                        if((board[i,j] == null) && (j % 2)==0)
+                        {
+                            Console.Write("|0000|");
+                        } else if((board[i,j] == null) && (j % 2)-1==0)
+                        {
+                            Console.Write("|####|");
+                        } else {
+                            Console.Write(board[i,j].GetCode());
+                        }
+                    } else if((i % 2)-1==0)
                     {
-                        Console.Write("|####|");
-                        Console.Write("|0000|");
-                        j++;
-                    } else {
-                        Console.Write(board[i,j].GetCode());
+                        if((board[i,j] == null) && (j % 2)==0)
+                        {
+                            Console.Write("|####|");
+                        } else if((board[i,j] == null) && (j % 2)-1==0)
+                        {
+                            Console.Write("|0000|");
+                        } else {
+                            Console.Write(board[i,j].GetCode());
+                        }
                     }
+                     
                 }
                 Console.Write("\n");
                 

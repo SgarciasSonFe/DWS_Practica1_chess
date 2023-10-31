@@ -23,8 +23,8 @@ namespace ChessAPI
             //Instancia un movimiento dentro del tablero, desde una posición
             //en la que haya una pieza hasta otro. De momento no se realizan
             //validaciones salvo que sea una posición que esté dentro del tablero.
-            BoardPosition fromBoardPosition = new BoardPosition(6,1);
-            BoardPosition toBoardPosition = new BoardPosition(5,1);
+            BoardPosition fromBoardPosition = new BoardPosition(0,0);
+            BoardPosition toBoardPosition = new BoardPosition(2,1);
             Movement movement = new Movement(fromBoardPosition,toBoardPosition);
             this.board.Move(movement);
         }
