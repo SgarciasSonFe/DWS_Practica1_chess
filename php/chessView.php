@@ -12,10 +12,10 @@
             $board = array(
                 array("RoB","KnB","BiB","QuB","KiB","BiB","KnB","RoB"),
                 array("PaB","PaB","PaB","PaB","PaB","PaB","PaB","PaB"),
-                array(""),
-                array(""),
-                array(""),
-                array(""),
+                array(),
+                array(),
+                array(),
+                array(),
                 array("PaW","PaW","PaW","PaW","PaW","PaW","PaW","PaW"),
                 array("RoW","KnW","BiW","QuW","KiW","BiW","KnW","RoW"));
 
@@ -58,18 +58,25 @@
                         echo "<td><div class='pieza'><img src='./img/WHIking.png'></div></td>"; 
                     } else if($board[$i][$j] == "PaW"){
                         echo "<td><div class='pieza'><img src='./img/WHIpawn.png'></div></td>"; 
-                    } else {
-                        if($i % 2)
+                    } 
+                        if($i % 2) 
                         {
-                            echo "<td><div class='negro'></div></td>"; 
-                            echo "<td><div class='blanco'></div></td>"; 
-                            $j++;
-                        } else {
-                            echo "<td><div class='blanco'></div></td>"; 
-                            echo "<td><div class='negro'></div></td>"; 
-                            $j++;
+                            if($j % 2) 
+                            {
+                                echo "<td><div class='blanco'></div></td>";
+                            } else {
+                                echo "<td><div class='negro'></div></td>";
+                            }
+                        } else if(($i % 2)-1) 
+                        {
+                            if($j % 2) 
+                            {
+                                echo "<td><div class='negro'></div></td>";
+                            } else {
+                                echo "<td><div class='blanco'></div></td>";
+                            }
                         }
-                    }
+                    
                 }
                 echo "</tr>";
             }
