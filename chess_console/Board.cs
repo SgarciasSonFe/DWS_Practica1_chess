@@ -51,7 +51,7 @@ namespace ChessAPI
                 _Move(movement);
             }
         }
-        // TODO Practica 02_3
+        // notTODO Practica 02_3
         //Implementar el método _move, que no realizará ninguna validación
         //simplemente moverá en la matriz la pieza. Realiza modificaciones
         //en otras clases si lo consideras necesario... 
