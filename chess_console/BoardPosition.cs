@@ -1,8 +1,6 @@
 namespace ChessAPI
 {
-    /// notTODO Practica 02_2
-    //Añadir un método público que permita saber si el objeto es "válido" es 
-    //Para que sea válido, las 2 variables _row y _column han de estar dentro del rango [0..7]
+    
     public class BoardPosition
     {
         private int _row;
