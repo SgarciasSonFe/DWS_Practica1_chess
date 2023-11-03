@@ -19,10 +19,7 @@ namespace ChessAPI
 
         public void TryToMove()
         {
-            // notTODO Practica 02_6
-            //Instancia un movimiento dentro del tablero, desde una posición
-            //en la que haya una pieza hasta otro. De momento no se realizan
-            //validaciones salvo que sea una posición que esté dentro del tablero.
+            
             BoardPosition fromBoardPosition = new BoardPosition(0,0);
             BoardPosition toBoardPosition = new BoardPosition(2,1);
             Movement movement = new Movement(fromBoardPosition,toBoardPosition);
