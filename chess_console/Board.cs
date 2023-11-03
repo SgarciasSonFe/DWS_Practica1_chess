@@ -9,8 +9,7 @@ namespace ChessAPI
         public Board()
         {
             board = new Piece[8, 8];
-            // notTODO Practica 02_7
-            // Este constructor colocará las piezas en el tablero  
+              
             board[0,0] = new Rook(Piece.ColorEnum.BLACK);
             board[0,1] = new Knight(Piece.ColorEnum.BLACK);
             board[0,2] = new Bishop(Piece.ColorEnum.BLACK);
@@ -51,10 +50,7 @@ namespace ChessAPI
                 _Move(movement);
             }
         }
-        // notTODO Practica 02_3
-        //Implementar el método _move, que no realizará ninguna validación
-        //simplemente moverá en la matriz la pieza. Realiza modificaciones
-        //en otras clases si lo consideras necesario... 
+         
         private void _Move(Movement movement)
         {
             
@@ -68,10 +64,7 @@ namespace ChessAPI
                     
         }
 
-        // notTODO Practica 02_4 
-        //Este método escribira por consola el tablero,
-        //haciendo un salto de línea después de cada fila.
-        //Para ver el formato del pintado, leer enunciado de la práctica
+        
         public void Draw()
         {
             for (int i = 0; i < 8; i++)
@@ -107,10 +100,7 @@ namespace ChessAPI
                 
             }
         }
-        // TODO Practica 02_5
-        //Este método devuelve una cadena con el estado del tablero. Dicha cadena,
-        //ha de tener el formato esperado por la parte Web para poder procesarse
-        //y pintarse.
+        
         public string GetBoardState()
         {
             string result = string.Empty;
